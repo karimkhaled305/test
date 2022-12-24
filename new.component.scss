@@ -1,0 +1,81 @@
+.shad {
+
+    background-color: rgba(0,0,0,0.7);
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+}
+
+.col-md-3:hover .shad{
+animation: animate 1s;
+animation-fill-mode: forwards;
+}
+
+
+.shad .paragraphs {
+
+    color: rgb(233, 11, 122);
+    background-color: #fff;
+    opacity: 0;
+   left:70%;
+   animation: pAnimate 1s 1.5s;
+   animation-fill-mode:forwards;
+ 
+}
+p {
+    display: inline-block;
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+    font-weight:900;
+}
+
+// p.m {
+//     animation: pAnimate 0.5s 2s;
+//     animation-fill-mode: forwards;
+//     font-size: 1.3rem;
+// }
+// p.a 
+// {
+//     animation: pAnimate 0.5s 2.5s;
+//     animation-fill-mode: forwards;
+//     font-size: 1.3rem;
+// }
+// p.k {
+//     animation: pAnimate 0.5s 3s;
+//     animation-fill-mode: forwards;
+//     font-size: 1.3rem;
+// }
+// p.e {
+//     animation: pAnimate 0.5s 3.5s;
+//     animation-fill-mode: forwards;
+//     font-size: 1.3rem;
+// }
+// p.u {
+//     animation: pAnimate 0.5s 4s;
+//     animation-fill-mode: forwards;
+//     font-size: 1.3rem;
+// }
+// p.p {
+//     animation: pAnimate 0.5s 4.5s;
+//     animation-fill-mode: forwards;
+//     font-size: 1.3rem;
+// }
+
+
+
+
+@keyframes animate {
+    0%{width: 0%;}
+    100%{width:100%;opacity: 1;}
+    
+}
+
+@keyframes pAnimate {
+    
+    0%{opacity: 0;left: 100%;}
+    25%{opacity: 0.2;left:100%}
+    50%{opacity: 0.4;left: 80%;}
+    75%{opacity: 0.6;left: 60%;}
+    100%{opacity: 1; left: 50%;}
+    
+}
